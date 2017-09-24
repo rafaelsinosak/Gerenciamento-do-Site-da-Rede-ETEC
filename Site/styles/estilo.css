@@ -1,0 +1,68 @@
+﻿#principal { 
+	margin:0 auto; 
+	} 
+
+.camadafoto { 
+	float:right; 
+	width:230px; 
+	height:auto; 
+	margin: 0 5px 5px 5px; 
+	padding:5px; 
+	background-color:#f5f7f9; 
+	border-right: #a5a7aa solid 1px; 
+	border-bottom: #06213f solid 1px; 
+	text-align:center; 
+}
+
+.camadafoto1 { 
+	float:right; 
+	width:100px; 
+	height:120px; 
+	margin: 0 5px 5px 5px; 
+	padding:5px; 
+	background-color:#f5f7f9; 
+	border-right: #a5a7aa solid 1px; 
+	border-bottom: #06213f solid 1px; 
+	text-align:center; 
+}
+
+.camadafoto2 { 
+	float:center; 
+	width:230px; 
+	height:auto; 
+	margin: 0 5px 5px 5px; 
+	padding:5px; 
+	background-color:#f5f7f9; 
+	border-right: #a5a7aa solid 1px; 
+	border-bottom: #06213f solid 1px; 
+	text-align:center; 
+}
+
+/* SEARCH --------------------------------------------------------*/
+
+.top-search{
+	position: absolute;
+	top:20px;
+	left: 50%;
+	margin-left: -250px;
+}
+
+#searchform #s{
+	color: #7e7e7e;
+	font-size: 20px;
+	width: 500px;
+	height: 35px;
+	padding: 0px 35px 0px 10px;
+	border: 0;
+	background: url(../img/search.png) no-repeat transparent;	
+}
+
+#searchform #searchsubmit{
+	position: absolute; 
+	top: 0px;
+	right: 10px;
+	width: 30px;
+	height: 35px;
+	border: 0px;
+	background: transparent;
+}

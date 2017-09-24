@@ -1,0 +1,379 @@
+﻿/*---------------- SITE RESPONSIVEL -----------------*/
+
+
+[cc lang="css"]
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+body {
+background: red;
+}
+}
+[/cc]
+
+Com isso estou dizendo: SE (é um dipositivo de tela) E (sua largura está entre 320 e 480), o <body> terá um background vermelho.
+
+O site csstricks.com nos deu esse fantástico snippet
+
+[cc lang="css"]
+/* Smartphones (portrait and landscape) ———– */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+/* Smartphones (landscape) ———– */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+/* Smartphones (portrait) ———– */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+/* iPads (portrait and landscape) ———– */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+/* iPads (landscape) ———– */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+/* iPads (portrait) ———– */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+/* Desktops and laptops ———– */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+/* Large screens ———– */
+@media only screen
+and (min-width : 1824px)
+    (max-width : 1920px) {
+/* Styles */
+}
+
+
+
+
+/* iPhone 4 ———– */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+[/cc]
+
+
+/*---------------------------------------------------*/
+
+
+
+
+
+#corpo{
+	background-color: #CFCFCF;
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	margin-left: -40%;
+	border-radius: 15px 15px 15px 15px;
+}
+
+#corpo1{
+	background-color: #034a95;
+	width: 80%;
+	height: auto;
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	margin-left: -40%;
+	border-radius: 0px 15px 15px 15px;
+}
+
+/* ------------------- Cabeçalho ------------------------ */
+#topheader{
+	background-color: #FFF;
+	width: 100%;
+	height: 100px;
+	vertical-align: 50%;
+	border-radius: 15px 15px 0px 0px;
+}
+
+/* CENTRO PAULA SOUZA */	
+#centro{
+	position: absolute;
+	top: 25px;
+	left: 10%;
+}
+
+/* ETEC */
+#etec{
+	position: absolute;
+	top: 7px;
+	left: 40%;
+}
+	
+/* GOVERNO DE SÃO PAULO*/
+#sp{
+	position: absolute;
+	top: 25px;
+	right: 10%;
+}	
+
+/* ------------------------ MENU ------------------------*/
+#corpomenu{
+	background-color: #034a95;
+	width: 100%;
+	height: 57px;
+	vertical-align: center;
+}	
+	
+#menunav,#menunav ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#menunav {
+    background-color: #034a95;
+    border-radius: 15px 15px 15px 15px;
+    /*box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); sombra*/
+    display: table;
+    padding: 10px;
+    position: relative;
+}
+#menunav ul {
+    background-color: #034a95;
+    /*border:1px solid #B00002;*/
+    border-radius: 0 15px 15px 15px;
+    border-width: 0 1px 1px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    left: -9999px;
+    overflow: hidden;
+    padding: 0 0 10px;
+    position: absolute;
+    top: -9999px;	
+}
+#menunav li {
+    float: left;
+    position: relative;
+}
+
+/*Texto do Menu*/
+#menunav li a {
+    color: white;
+    display: block;
+    font-size: 18px;
+	font-family:times;
+    padding: 7px 25px;
+    text-decoration: none;
+}
+
+/*Botoes do MENU*/
+#menunav li:hover > a {
+    background-color: #dfeffc;
+    border-radius: 15px 15px 15px 15px;
+    color: #034a95;
+}
+#menunav li:hover > a.hsubs {
+    border-radius: 10px 10px 0 0;
+	color: #034a95; /* quando coloca o mouse */
+}
+
+/*sub-menu*/
+#menunav li:hover ul.subs {
+    left: 0;
+    top: 32px;
+    width: 140px;
+	height: 60px;
+	color: #dfeffc;
+}
+#menunav ul li {
+    width: 100%;
+}
+#menunav ul li:hover > a {
+    background-color: #dfeffc !important;
+    border-radius: 15px 15px 15px 15px;
+}
+/* ------------------------ FIM DO MENU ------------------------*/
+
+.img{
+border-radius: 15px 15px 15px 15px;
+}
+
+#img { 
+   display: block;
+   background-color: #666;
+   width: 100px;
+   height: 40px;
+   border: solid 5px red;
+}
+ 
+.img:hover { border: solid 5px black; }
+#box2{
+ background:#b8b787;
+border-radius:60px;
+    width: 200px;
+    height: 50px;
+	right:10px;
+	position:absolute;
+	}
+
+
+
+
+#esquerda{
+	background-color: #034a95;
+	/*border-top: 1px solid #B00002;*/
+	width: 230px;
+	height: 350px;
+	position: absolute;
+	top: 170px;
+	left: 9px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+#esquerda2{
+	background-color: #034a95;
+	/*border-top: 1px solid #B00002;*/
+	width: 230px;
+	height: 450px;
+	position: absolute;
+	top: 170px;
+	left: 9px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+#direita{
+	background-color: #034a95;
+	/*border-top: 1px solid #B00002;*/
+	width: 230px;
+	height: 350px;
+	position: absolute;
+	top: 170px;
+	right: 9px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+/* NOTICIAS */
+#noticia{
+	
+	/*border-top: 1px solid #B00002;*/
+	width: 30%;
+	height: 200px;
+	position: absolute;
+	top: 645px;
+	left: 1%;
+	border-radius: 15px 15px 15px 15px;	
+}
+
+/* EVENTOS */
+#evento{
+	background-color: #ededed;
+	/*border-top: 1px solid #B00002;*/
+	width: 20%;
+	height: 100px;
+	position: absolute;
+	top: 645px;
+	left: 36%;
+	border-radius: 15px 15px 15px 15px;	
+}
+
+/* NOTÍCIAS RECENTES */
+#recente{
+	background-color: #ededed;
+	/*border-top: 1px solid #B00002;*/
+	width: 30%;
+	height: 200px;
+	position: absolute;
+	top: 660px;
+	right: 0%;
+	border-radius: 15px 15px 15px 15px;	
+}
+
+/* ENDEREÇO ETEC*/
+#contato{
+	background-color: #ededed;
+	width: 590px;
+	height: 420px;
+	font-size: 20px;
+	font-family: times;
+	position: absolute;
+	top: 220px;
+	left: 50%;
+	margin-left: -295px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+
+/*rodape*/
+
+div.rodape{
+		background-color: #034a95;
+		width:100%;
+		height:200px;
+		top:600px;
+		left:0px;
+		position:relative;
+		visibility:visible;
+		border-radius: 15px 15px 15px 15px;
+		
+	}
+	
+	
+	div.rodape2{
+		background-color: #034a95;
+		width:100%;
+		height:200px;
+		top:100px;
+		left:0px;
+		position:relative;
+		visibility:visible;
+		border-radius: 15px 15px 15px 15px;
+		
+	}
+	
+	
+	/*--------------------- efeito em imagem ----------------*/
+	
+	
+	.img2{
+  /*esta linha aplica uma borda cor preta na imagem*/
+ opacity: 0.8; /*esta linha é a que escurece a imagem*/
+ border-radius: 15px 15px 15px 15px;
+ }
+
+.img2:hover{
+  /*esta linha aplica uma borda cor preta na imagem*/
+ opacity: 1.0; /*esta linha é a que clareia a imagem*/
+ border-radius: 15px 15px 15px 15px;
+ }
+ 
+ 
+ 
+ .efeito img{
+ border: #191919 solid 2px; /*esta linha aplica uma borda cor preta na imagem*/
+ opacity: 0.8; /*esta linha é a que escurece a imagem*/
+ }
+
+.efeito img:hover{
+ border: #191919 solid 2px; /*esta linha aplica uma borda cor preta na imagem*/
+ opacity: 1.0; /*esta linha é a que clareia a imagem*/
+ }
+	
+	
+	
+	

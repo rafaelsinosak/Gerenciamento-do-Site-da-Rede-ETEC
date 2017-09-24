@@ -1,0 +1,152 @@
+﻿<html>
+<head>
+<title>ETEC - São José dos Campos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.jcarousel.pack.js"></script>
+<script type="text/javascript" src="scripts/jquery.jcarousel.setup.js"></script>
+</head>
+
+<body id="top">
+
+<!-- ####################################################################################################### -->
+	<div class="wrapper col1">
+		<div id="header">
+			<div id="logo2">
+				<a href="www.saopaulo.sp.gov.br"><img src="imagens/sp.png" width=100px height=100px></a>
+				<p></p>
+			</div>
+			
+			<div id="logo">
+				<a href="index.php"><img src="imagens/logo.png" width=200px height=100px></a>
+				<p></p>
+			</div>			
+			<div id="topnav">
+				<ul>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="noticia.php">Notícias</a></li>
+					<li><a href="eventos.php">Eventos</a></li>        
+					<li><a href="docente.php">Docente</a></li>   	  
+					<li class="last"><a href="galeria_escola.php">Galeria</a></li>	
+					<li><a href="contato.html">Contato</a></li>	
+				</ul>
+			</div>
+		</div>
+		<br class="clear" />
+    </div>
+      
+<!-- ####################################################################################################### -->
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="container">
+    
+      <form>
+	<table align="center">
+		<tr>
+			<td width="15%" align="right">Nome: </td>
+			<td width="85%"><input type="text" name="nome"  id="1" size="50"></td>
+		</tr>
+		<tr>
+			<td align="right">E-mail: </td>
+			<td><input type="text" name="email"  id="2" size="50"></td>
+		</tr>
+		<tr>
+			<td align="right">Perfil: </td>
+			<td><select name="perfil"  id="3" style="width:180px;">
+					<option value="0" selected="selected">Selecione o Perfil</option>
+									<option value="1">Aluno </option>
+									<option value="2">Professor </option>
+									<option value="3">Funcionário Aux. Adm. </option>
+									<option value="4">Público Externo </option>
+							</select></td>
+		</tr>
+		<tr>
+			<td align="right">Assunto: </td>
+			<td>
+				<select name="tipo"  id="4" style="width:180px;">
+					<option value="0" selected="selected">Selecione o Assunto</option>
+					<option value="1"> Elogio </option>
+					<option value="2"> Consulta </option>
+					<option value="3"> Sugestão </option>
+					<option value="4"> Reclamação </option>
+					<option value="5"> Outro </option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td align="right" valign="top">Descrição:</td>
+			<td align="left"><textarea cols=60 rows=5 name="comentario" id="5"></textarea></td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2">
+			<input type="button" value="   Enviar   " onClick="javascript: Verificando()">
+			</td>
+		</tr>
+	</table>
+	</form>
+       
+	   
+	  
+      
+    </div>
+  </div>
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="footer">
+    <div class="box1">
+      <h2>Como chegar</h2>
+      <iframe width="250" height="140" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=ETEC+S%C3%A3o+Jos%C3%A9+dos+Campos,+Parque+Residencial+Aquarius,+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP&amp;aq=&amp;sll=-23.219921,-45.906845&amp;sspn=0.36671,0.302811&amp;t=m&amp;ie=UTF8&amp;hq=ETEC&amp;hnear=Parque+Residencial+Aquarius,+S%C3%A3o+Jos%C3%A9+dos+Campos+-+S%C3%A3o+Paulo&amp;fll=-23.219921,-45.906845&amp;fspn=0.006182,0.009645&amp;st=107799112320184567157&amp;rq=1&amp;ev=zi&amp;split=1&amp;ll=-23.219921,-45.906845&amp;spn=0.012364,0.01929&amp;output=embed"></iframe>
+      
+	  
+      <a href="https://www.google.com.br/maps/place/ETEC+-+S%C3%A3o+Jos%C3%A9+dos+Campos/@-23.220111,-45.906952,17z/data=!3m1!4b1!4m2!3m1!1s0x94cc357f12807135:0xa7e8aa77e5f28aac" target="_blank"><br>Clique aqui</a>
+    
+	</div>
+	
+    <div class="box contactdetails">
+      <h2>Contatos</h2>
+      <ul>
+        <li>Tel: (12) 3941-1571</li>
+        <li>Email: etecsjc@etecsjc.com</li>
+		
+    </div>
+    <div class="box flickrbox">
+      <h2>Login do ADM</h2>
+      <form name="dados" method="POST" action="login/logar.php">
+        <table border="0"><tr><td width="20%">
+		<font color="white">Nome:</font></td><td><input type="text" name="nome" id="nome" size="15" value="">
+		</td></tr>
+        <tr><td>
+		<font color="white">Senha:</font></td><td><input type="password"  id="senha" name="senha" size="15" value="">
+		</td></tr>
+
+	
+		<tr><td align="right"><input type="submit" value="Entrar"></td>
+		
+		</form>
+		
+		<form name="dados" method="POST" action="login/destroisessao.php">						
+			<td align="left"><input type="submit" name="" id="" value="sair" onClick=window.location="#" /></td></tr></table>
+		</form>
+		<br>
+	  <div class="wrap">
+        
+        <div class="fix"></div>
+      </div>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+  <div id="copyright">
+    <p class="fl_left"><center><b>ETEC - São José dos Campos</b></center></p>
+       
+  </div>
+</div>
+
+</body>
+</html>
